@@ -29,11 +29,11 @@ const styles = StyleSheet.create({
   },
 
   breakerText: {
-    backgroundColor: '#fffff',
+    backgroundColor: '#fff',
     paddingHorizontal: 10,
     color: '#222',
     fontWeight:"bold",
     fontSize: 12,
-    opacity: 0.8,
+    // opacity: 0.8,
   },
 })
