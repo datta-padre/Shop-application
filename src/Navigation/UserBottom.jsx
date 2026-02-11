@@ -9,6 +9,7 @@ import Home from '../Screens/HomeScreen/Home';
 import MyOrder from '../Screens/MyOrder/MyOrder'
 import MyProfile from '../Screens/MyProfile/MyProfile'
 import Favorites from '../Screens/Favorites/Favorites'
+import Colors from '../utils/Colors';
 
 const Tab = createBottomTabNavigator();
 
@@ -21,7 +22,7 @@ const UserBottom = () => {
           height: 75,
         },
         tabBarLabelStyle: { fontSize: 13,fontWeight:700 },
-        tabBarActiveTintColor: '#514eb7',
+        tabBarActiveTintColor:Colors.primary,
         tabBarInactiveTintColor: 'gray',
 
         tabBarIcon: ({ color, size, focused }) => {

@@ -9,6 +9,7 @@ import {
   StatusBar,
 } from 'react-native'
 import React, { useRef, useState } from 'react'
+import Colors from '../../utils/Colors'
 
 const { width } = Dimensions.get('window')
 
@@ -119,7 +120,7 @@ export default Welcome1;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor:Colors.background,
     alignItems: 'center',
   },
 
@@ -134,7 +135,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '600',
     color: '#1c1c1c',
-    borderColor:"#5b5bd6",
+    borderColor:Colors.primary,
     borderWidth:1,
     borderRadius:10,
     padding:5,
@@ -194,12 +195,12 @@ const styles = StyleSheet.create({
     width: 18,
     height: 6,
     borderRadius: 3,
-    backgroundColor: '#5b5bd6',
+    backgroundColor:Colors.primary,
     marginHorizontal: 4,
   },
 
   button: {
-    backgroundColor: '#5b5bd6',
+    backgroundColor: Colors.primary,
     width: '90%',
     height: 50,
     borderRadius: 25,
@@ -216,7 +217,7 @@ const styles = StyleSheet.create({
   },
 
   loginText: {
-    color: '#5b5bd6',
+    color: Colors.primary,
     fontSize: 14,
     fontWeight: 'bold',
      marginBottom: 70,

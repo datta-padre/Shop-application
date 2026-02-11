@@ -38,6 +38,7 @@ const RootStack = () => {
       component={SignUp} 
       options={{ animation: 'slide_from_right' }} 
       />
+      
       <Stack.Screen
        name="Home"
        component={BottomTab} 

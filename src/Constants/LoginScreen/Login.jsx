@@ -14,6 +14,8 @@ import BreakerText from '../../Components/BreakerText';
 import SocialIcon from '../../Components/SocialIcon'
 import { resetAndNavigate } from '../../utils/NavigationUtils';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import color from '../../utils/Colors'
+import Colors from '../../utils/Colors';
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -43,7 +45,7 @@ const Login = () => {
         <View style={styles.inputBox}>
           <Text style={styles.label}>Email or Phone Number</Text>
           <View style={styles.inputRow}>
-            <Icon name="user" size={18} color="#5b5bd6" />
+            <Icon name="user" size={18} color={color.primary} />
             <TextInput
               placeholder="Enter your email or phone number"
               style={styles.input}
@@ -57,7 +59,7 @@ const Login = () => {
         <View style={styles.inputBox}>
           <Text style={styles.label}>Password</Text>
           <View style={styles.inputRow}>
-            <Icon name="lock" size={18} color="#5b5bd6" />
+            <Icon name="lock" size={18} color={color.primary} />
 
             <TextInput
               placeholder="Enter your password"
@@ -98,7 +100,7 @@ export default Login;
 const styles = StyleSheet.create({
   container: {
     padding: 20,
-    backgroundColor: '#fff',
+    backgroundColor:Colors.background,
     flexGrow: 1,
   },
 
@@ -148,7 +150,7 @@ const styles = StyleSheet.create({
   },
 
   forgotText: {
-    color: '#5b5bd6',
+    color: color.primary,
     fontSize: 13,
     fontWeight: 'bold',
   },

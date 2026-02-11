@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import Colors from '../utils/Colors';
 
 const BreakerText = ({ text }) => {
   return (
@@ -29,7 +30,7 @@ const styles = StyleSheet.create({
   },
 
   breakerText: {
-    backgroundColor: '#fff',
+    backgroundColor:Colors.background,
     paddingHorizontal: 10,
     color: '#222',
     fontWeight:"bold",

@@ -2,6 +2,7 @@ import { Animated, StyleSheet, Text, View } from 'react-native'
 import React, { useEffect } from 'react'
 import { resetAndNavigate } from '../../utils/NavigationUtils';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import Colors from '../../utils/Colors';
 
 const Splash =  () => {
 
@@ -40,7 +41,7 @@ export default Splash;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#514eb7",
+    backgroundColor:Colors.primary,
   },
   centerContent: {
     flex: 1,

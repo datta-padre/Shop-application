@@ -1,5 +1,6 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
+import Colors from '../utils/Colors'
 
 const Buttons = ({ text, onPress }) => {
   return (
@@ -17,9 +18,10 @@ const styles = StyleSheet.create({
   wrapper: {
   flexDirection: 'row',
   justifyContent: 'center',
+  backgroundColor:Colors.background,
 },
   button: {
-    backgroundColor: '#5b5bd6',
+    backgroundColor: Colors.primary,
     width: '90%',
     height: 50,
     borderRadius: 25,
