@@ -19,10 +19,8 @@ const UserBottom = () => {
         headerShown: false,
         tabBarStyle: {
           height: 75,
-          justifyContent:"center",
-          alignItems:"center"
         },
-        tabBarLabelStyle: { fontSize: 13 },
+        tabBarLabelStyle: { fontSize: 13,fontWeight:700 },
         tabBarActiveTintColor: '#514eb7',
         tabBarInactiveTintColor: 'gray',
 

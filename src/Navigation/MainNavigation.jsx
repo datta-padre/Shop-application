@@ -17,11 +17,32 @@ const RootStack = () => {
       initialRouteName="Splash"
       screenOptions={{ headerShown: false }}
     >
-      <Stack.Screen name="Splash" component={Splash} />
-      <Stack.Screen name="Welcome1" component={Welcome1} />
-      <Stack.Screen name="Login" component={Login} />
-      <Stack.Screen name="SignUp" component={SignUp} />
-      <Stack.Screen name="Home" component={BottomTab} />
+      <Stack.Screen
+       name="Splash"
+       component={Splash}
+      />
+
+      <Stack.Screen 
+      name="Welcome1" 
+      component={Welcome1} 
+      options={{ animation: 'fade' }}/>
+
+      <Stack.Screen
+       name="Login"
+       component={Login}
+       options={{ animation: 'slide_from_right' }} 
+       />
+
+      <Stack.Screen 
+      name="SignUp" 
+      component={SignUp} 
+      options={{ animation: 'slide_from_right' }} 
+      />
+      <Stack.Screen
+       name="Home"
+       component={BottomTab} 
+       options={{ animation: 'fade_from_bottom'}}
+      />
     </Stack.Navigator>
   );
 };
@@ -36,18 +57,3 @@ const MainNavigation = () => {
 
 export default MainNavigation;
 
-const Home = () => {
-  return (
-    <View style={styles.home}>
-      <Text>Home Screen</Text>
-    </View>
-  );
-};
-
-const styles = StyleSheet.create({
-  home: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
